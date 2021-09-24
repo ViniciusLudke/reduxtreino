@@ -16,7 +16,7 @@ export default function Form(){
         <>
         <input type="text" value={result} placeholder={result}  onChange={(e) => dispatch(namePage(e.target.value,'NAME'))}/>
             <button onClick={() =>{
-                dispatch(namePage('T','NAME'))
+                dispatch(namePage('','NAME'))
             }}>
                 Chamar</button>
         <div>Resultado {result}</div>
