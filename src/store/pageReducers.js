@@ -1,12 +1,15 @@
 //recebe dados da actional
-export default function(state = 0,action) {//obj que retorno na pageActions
+
+export default function(state = 'Sem Pg',action) {//obj que retorno na pageActions
+    //alert('testee'+ action.type)
     switch(action.type)//retorno com base na actiuon.type
     {
-        case 'NAME ':
-            return action.payload[0]
+        case 'NAME':
+            return action.payload
 
 
         default:
+            //alert('entrou!' + state)
          return state;
     }
 
